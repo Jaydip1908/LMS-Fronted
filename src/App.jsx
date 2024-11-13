@@ -1,6 +1,7 @@
 import './App.css'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
+import { Button } from './components/ui/button';
 
 function App() {
   const [data, setData] = useState("");
@@ -14,10 +15,11 @@ function App() {
   console.log(data);
 
   return (
-    <div style={{ textAlign: 'center', fontSize: '40px' }}>
-      <h1>Data from API:</h1>
-      {data}
-    </div>
+    <Button>
+      <h1 className="text-6xl font-bold underline">
+        {data}
+      </h1>
+    </Button>
   );
 }
 
