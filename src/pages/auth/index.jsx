@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import CommonForm from "@/components/ui/common-form";
 import { SignInFormControls, SignUpFormControls } from "@/config";
+=======
+>>>>>>> main
 import { TabsTrigger, Tabs, TabsList, TabsContent } from "@radix-ui/react-tabs";
 import { GraduationCap } from "lucide-react";
 import { useState } from "react";
@@ -31,12 +34,17 @@ const AuthPage = () => {
             <TabsTrigger value="signin">Sign In</TabsTrigger>
             <TabsTrigger value="signup">Sign Up</TabsTrigger>
           </TabsList>
+<<<<<<< HEAD
           <TabsContent value="signin">
             <CommonForm formControls={SignInFormControls} />
           </TabsContent>
           <TabsContent value="signup">
             <CommonForm formControls={SignUpFormControls} />
           </TabsContent>
+=======
+          <TabsContent value="signin">Sign In</TabsContent>
+          <TabsContent value="signup">Sign Up</TabsContent>
+>>>>>>> main
         </Tabs>
       </div>
     </div>
