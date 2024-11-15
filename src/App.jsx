@@ -2,6 +2,8 @@ import './App.css'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Button } from './components/ui/button';
+import { Routes, Route } from "react-router-dom"
+import AuthPage from './pages/auth';
 
 function App() {
   const [data, setData] = useState("");
@@ -13,13 +15,14 @@ function App() {
   }, []);
 
   console.log(data);
+  <Button>
+    check
+  </Button>
 
   return (
-    <Button>
-      <h1 className="text-6xl font-bold underline">
-        {data}
-      </h1>
-    </Button>
+    <Routes>
+      <Route path="/auth" element={<AuthPage />} />
+    </Routes>
   );
 }
 
